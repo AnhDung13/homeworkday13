@@ -190,6 +190,9 @@ input[id="tab-register"]:checked ~ .col-12 .login_register_form .form_register {
   visibility: visible;
   transform: translateX(0);
 }
+input[id="tab-login"]:checked ~ .col-12 .login_register_form .form_login {
+  z-index: 99;
+}
 
 .custom-checkbox {
   position: relative;
