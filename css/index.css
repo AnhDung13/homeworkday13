@@ -12,7 +12,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  overflow-x: hidden;
 }
 
 .login_page_decor {
@@ -187,9 +186,6 @@ input[id="tab-login"]:checked ~ .col-12 .login_register_form .form_login,
 input[id="tab-register"]:checked ~ .col-12 .login_register_form .form_register {
   opacity: 1;
   transform: translateX(0);
-}
-input[id="tab-login"]:checked ~ .col-12 .login_register_form .form_register,
-input[id="tab-register"]:checked ~ .col-12 .login_register_form .form_login {
 }
 .custom-checkbox {
   position: relative;
