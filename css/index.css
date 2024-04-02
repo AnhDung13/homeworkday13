@@ -126,7 +126,6 @@ input[id="tab-register"]:checked ~ .col-12 .btn_register {
   position: absolute;
   transform: translateX(50%);
   opacity: 0;
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 .form_login {
   top: calc(50% - 313px);
@@ -186,6 +185,7 @@ input[id="tab-login"]:checked ~ .col-12 .login_register_form .form_login,
 input[id="tab-register"]:checked ~ .col-12 .login_register_form .form_register {
   opacity: 1;
   transform: translateX(0);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 .custom-checkbox {
   position: relative;
@@ -348,15 +348,23 @@ button {
     width: 100%;
     margin-top: 80px;
     position: static;
-    opacity: 0;
-    transform: translateX(0);
   }
   .form_box {
     margin: 0 auto;
     position: static;
+    transform: translateX(0);
+    opacity: 1;
+    display: none;
   }
   .form_decor {
     display: none;
+  }
+  input[id="tab-login"]:checked ~ .col-12 .login_register_form .form_login,
+  input[id="tab-register"]:checked
+    ~ .col-12
+    .login_register_form
+    .form_register {
+    display: block;
   }
 }
 @media screen and (max-width: 600px) {
