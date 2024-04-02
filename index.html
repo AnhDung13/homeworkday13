@@ -23,7 +23,7 @@
         <!-- info -->
         <input type="radio" name="tab" id="tab-login" hidden checked />
         <input type="radio" name="tab" id="tab-register" hidden />
-        <div class="col-12">
+        <div class="col-12 col-xxl-6">
           <div class="page_info">
             <!-- logo -->
             <div class="logo">
@@ -53,12 +53,13 @@
         </div>
         <!-- end info -->
         <!-- form -->
-        <div class="col-12">
+        <div class="col-12 col-xxl-6">
           <div class="login_register_form">
-            <!-- form-box -->
+            <!-- form-box login -->
             <div class="form_box form_login">
-              <img class="form_decor" src="img/rocket.webp" alt="" />
-              <h2 class="form_title">account login</h2>
+              <img class="form_decor" src="img/rocket.webp" alt="rocket" />
+              <h2 class="form_title">Account Login</h2>
+              <!-- form -->
               <form>
                 <div class="container">
                   <div class="row">
@@ -111,21 +112,159 @@
                           </div>
                           <label for="custom-cb">Remember Me</label>
                         </div>
-
                         <div>
-                          <a class="forgot-pw" href="">Forgot Password?</a>
+                          <a class="forgot-pw" style="margin-top: 1px" href=""
+                            >Forgot Password?</a
+                          >
                         </div>
                       </div>
+                    </div>
+                    <!-- /form-item -->
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <button class="login_btn">Login to your Account!</button>
                     </div>
                     <!-- /form-item -->
                   </div>
                 </div>
               </form>
+              <!-- /form -->
+              <!-- line-text -->
+              <p class="line_text">Login with your Social Account</p>
+              <!-- /line-text -->
+              <!-- social links -->
+              <div class="social_links">
+                <a href="#!" class="social facebook">
+                  <svg class="icon-facebook">
+                    <use xlink:href="#svg-facebook"></use>
+                  </svg>
+                </a>
+                <a href="#!" class="social tweeter">
+                  <svg class="icon-twitter">
+                    <use xlink:href="#svg-twitter"></use>
+                  </svg>
+                </a>
+                <a href="#!" class="social twitch">
+                  <svg class="icon-twitch">
+                    <use xlink:href="#svg-twitch"></use>
+                  </svg>
+                </a>
+                <a href="#!" class="social youtube">
+                  <svg class="icon-youtube">
+                    <use xlink:href="#svg-youtube"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- /social links -->
             </div>
-            <!-- /form-box -->
-            <!-- form-box -->
-            <div class="form_box form_register"></div>
-            <!-- /form-box -->
+            <!-- /form-box login -->
+            <!-- form-box register -->
+            <div class="form_box form_register">
+              <img
+                class="form_decor"
+                src="img/rocket.webp"
+                alt="rocket"
+                style="top: -14px"
+              />
+              <h2 class="form_title">Create your Account!</h2>
+              <!-- form -->
+              <form>
+                <div class="container">
+                  <div class="row">
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <div class="form-item">
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          required
+                          placeholder=" "
+                        />
+                        <label for="email">Your Email</label>
+                      </div>
+                    </div>
+                    <!-- /form-item -->
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <div class="form-item">
+                        <input
+                          type="text"
+                          name="username"
+                          id="username-register"
+                          required
+                          placeholder=" "
+                        />
+                        <label for="username-register">Username</label>
+                      </div>
+                    </div>
+                    <!-- /form-item -->
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <div class="form-item">
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          required
+                          placeholder=" "
+                        />
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                    <!-- /form-item -->
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <div class="form-item">
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          required
+                          placeholder=" "
+                        />
+                        <label for="password">Repeat Password</label>
+                      </div>
+                    </div>
+                    <!-- /form-item -->
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <div class="row" style="margin: 0">
+                        <div class="custom-checkbox">
+                          <input
+                            type="checkbox"
+                            name="custom-cb"
+                            id="custom-cb"
+                            hidden
+                            checked
+                          />
+                          <div class="box-check">
+                            <svg class="icon-cross">
+                              <use xlink:href="#svg-cross"></use>
+                            </svg>
+                          </div>
+                          <label for="custom-cb"
+                            >Send me news and updates via email</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /form-item -->
+                    <!-- form-item -->
+                    <div class="col-12">
+                      <button class="register_btn">Register Now!</button>
+                    </div>
+                    <!-- /form-item -->
+                  </div>
+                </div>
+              </form>
+              <p class="form_text">
+                You'll receive a confirmation email in your inbox with a link to
+                activate your account. If you have any problems,
+                <a href="#">contact us</a>!
+              </p>
+            </div>
+            <!-- /form-box register -->
           </div>
         </div>
         <!-- end form -->
