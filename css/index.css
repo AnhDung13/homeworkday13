@@ -336,6 +336,7 @@ button {
   .vikinger_login_page {
     padding: 80px 0 100px;
     position: static;
+    overflow-x: hidden;
   }
   .info_text {
     display: none;
