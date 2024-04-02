@@ -1,0 +1,283 @@
+body {
+  font-size: 16px;
+  background-color: #f8f8fb;
+  overflow: hidden;
+}
+
+.vikinger_login_page {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/landing-background.jpg) no-repeat 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.login_page_decor {
+  width: 64%;
+  height: 140%;
+  border-radius: 50%;
+  background: url(../img/dot-texture.png) repeat 0 0 #fff;
+  position: absolute;
+  top: -20%;
+  right: -32%;
+  pointer-events: none;
+}
+.page_info {
+  width: 584px;
+  position: absolute;
+  top: 16%;
+  left: 13%;
+  text-align: center;
+}
+.page_info .logo {
+  display: flex;
+  justify-content: center;
+}
+.icon-logo-vikinger {
+  fill: #fff;
+  width: 42px;
+  height: 60px;
+}
+.pre_title {
+  margin-top: 36px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+.title {
+  font-size: 6.5rem;
+  font-family: Titillium Web;
+  font-weight: 900;
+  position: relative;
+  top: -10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+}
+.btn_switch_tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  border-radius: 12px;
+}
+.tab_btn {
+  border: 1px solid #fff;
+  display: block;
+  width: 180px;
+  height: 54px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.btn_switch_tabs :first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.btn_switch_tabs :last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+input[id="tab-login"]:checked ~ .col-12 .btn_login {
+  color: #3e3f5e;
+  background-color: #fff;
+}
+input[id="tab-register"]:checked ~ .col-12 .btn_register {
+  color: #3e3f5e;
+  background-color: #fff;
+}
+.login_register_form {
+  width: 484px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 13%;
+}
+.form_decor {
+  position: absolute;
+}
+.form_title {
+  text-align: center;
+  font-size: 1.625rem;
+  text-transform: capitalize;
+}
+.form_box {
+  width: 484px;
+  padding: 64px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+  display: none;
+}
+form {
+  margin-top: 76px;
+  width: 100%;
+}
+.form-item {
+  position: relative;
+}
+.form-item label {
+  color: #adafca;
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.form-item input:not(:placeholder-shown) ~ label,
+.form-item input:focus ~ label {
+  background-color: #fff;
+  padding: 0 6px;
+  font-size: 0.75rem;
+  top: -6px;
+  left: 12px;
+}
+input[type="password"],
+input[type="text"] {
+  height: 54px;
+  padding: 0 18px;
+}
+input[type="password"],
+input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.login_register_form .col-12 + .col-12 {
+  margin-top: 28px;
+}
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #615dfa;
+}
+input[id="tab-login"]:checked ~ .col-12 .login_register_form .form_login {
+  display: block;
+}
+input[id="tab-register"]:checked ~ .col-12 .login_register_form .form_register {
+  display: block;
+}
+.custom-checkbox {
+  position: relative;
+}
+.custom-checkbox label {
+  padding-left: 34px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 22px;
+}
+.box-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #dedeea;
+  border-radius: 6px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.icon-cross {
+  fill: #fff;
+  width: 12px;
+  height: 12px;
+}
+.forgot-pw {
+  text-align: right;
+  margin-top: 1px;
+}
+.forgot-pw a {
+  color: #adafca;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 22px;
+}
+#custom-cb:checked ~ .box-check {
+  background-color: #23d2e2;
+  border-color: #23d2e2;
+}
+@media screen and (max-width: 1500px) {
+  .login_page_decor {
+    display: none;
+  }
+  .page_info {
+    left: 6%;
+  }
+  .btn_switch_tabs {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .vikinger_login_page {
+    padding: 80px 0 100px;
+    position: static;
+  }
+  .page_info {
+    width: 100%;
+    position: static;
+  }
+  .login_register_form {
+    width: 100%;
+    margin-top: 80px;
+    position: static;
+  }
+  .form_box {
+    margin: 0 auto;
+    position: static;
+  }
+  .form_decor {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form_box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 3.75rem;
+  }
+  .btn_switch_tabs {
+    width: 90%;
+    margin: 20px auto 0;
+  }
+  .tab_btn {
+    width: 50%;
+  }
+  .login_register_form {
+    margin-top: 60px;
+  }
+  .form_box {
+    padding: 40px 32px;
+  }
+}
+label,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #3e3f5e;
+  font-family: Rajdhani, sans-serif;
+  line-height: 1em;
+}
+label {
+  user-select: none;
+}
